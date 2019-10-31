@@ -1,0 +1,36 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 1
+#
+#        Comando basicos
+# 
+#******************************************************************************
+
+c(1,2,3,4,5)    # Genera array con valores 1,2,3,4,5
+c(T,F,T,T)      # Genera array con booleanos
+x<-c("Badajoz","Cáceres")   # Genera array de 2 elementos y se lo asigna a "x"
+c(1,2,3,F)      # Genera array. A "F" le asigna valor "0"
+
+x<-c(1,3,5)
+y<-c(2,4,6)
+c(x,y)          # La función c() permite concatenar vectores.
+c(x*y)          # Multiplica elementos
+
+x<-c(1,2,3,4,5,6,7,8,9,10)
+x[3]            # Extrae el elemento 3
+x[-3]           # Extrae todos menos e 3er elemento  
+x[c(1,5,7)]     # Extrae los elementos 1,5 y 7
+
+x>8             # Compara los elementos con "8"
+# [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE TRUE TRUE 
+
+# Para crear array hay varias formas.
+1:5                 # [1] 1 2 3 4 5
+seq(1,6)            # [1] 1 2 3 4 5 6
+seq(1,6,by=0.5)     # [1] 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0
+seq(1,6,length=10)  # [1] 1.000000 1.555556 2.111111 2.666667 3.222222 3.777778 4.333333 4.888889 5.444444 6.000000
+rep(1,5)            # [1] 1 1 1 1 1
+rep(c(1,2),5)       # [1] 1 2 1 2 1 2 1 2 1 2
+rep(1:4,2)          # [1] 1 2 3 4 1 2 3 4
+rep(1:3,c(1,4,5))   # [1] 1 2 2 2 2 3 3 3 3 3

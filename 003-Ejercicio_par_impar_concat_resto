@@ -1,0 +1,27 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 3
+#
+#        Ejercicio
+# 
+# Crear sendos vectores con los 50 primeros números pares e impares, a los que
+# llamaréis vp y vi, respectivamente. Concatenar ambos vectores y seleccionar aquellos valores que
+# ocupan posiciones que sean múltiplos de 3
+#
+#******************************************************************************
+
+vi<-1
+vp<-2
+
+# Primeros 50 valores pares e impares
+for (i in 2:50){    
+vi<-c(vi,i*2-1) 
+vp<-c(vp,i*2)
+}
+
+# Concateno valores - Vtotal
+vt<-c(vi,vp)
+
+# Obtengo el resto - Vfinal
+vt[vt%%3==0]

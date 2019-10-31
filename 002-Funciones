@@ -1,0 +1,26 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 2
+#
+#        Funciones
+# 
+#******************************************************************************
+
+x<-3.353426453
+#exp(x)      # Exponencial de x (e^x)
+#log(x)      # Logaritmo neperiano de x
+#log(x,n)    # Logaritmo en base n de x
+#log10(x)    # Logaritmo en base 10 de x
+#sqrt(x)     # Raíz cuadrada de x
+#factorial(x) # Factorial de x (x!)
+#floor(x)    # Redondea x hacia abajo
+#ceiling(x)  # Redondea x hacia arriba
+#trunc(x)    # Valor entero más próximo a x, entre x y 0.
+#round(x, digits=0)  # Redondea el valor de x, siendo digits el número de decimales que se permiten.
+#signif(x, digits=6) # Devuelve el valor de x con 6 dígitos en notación científica
+#cos(x)      # Coseno de x (en radianes)
+#sin(x)      # Seno de x (en radianes)
+#tan(x)      # Tangente de x (en radianes)
+#acos(x),asin(x),atan(x) # Funciones trigonométricas inversas
+#abs(x)      # Valor absoluto de x 

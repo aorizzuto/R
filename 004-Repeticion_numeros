@@ -8,6 +8,10 @@
 # Crear un vector con los números de vuestro D.N.I., donde cada uno de los números que
 # lo componen debe aparecer repetido un número de veces igual a él mismo. 
 #
+# Output:
+#
+#   [1] 3 3 3 2 2 1 5 5 5 5 5 4 4 4 4 2 2 9 9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 
+#
 #******************************************************************************
 
 x<-"32154298"

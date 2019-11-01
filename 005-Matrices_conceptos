@@ -1,0 +1,36 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 5
+#
+#        Matrices - Conceptos
+# 
+# Crear un vector con los números de vuestro D.N.I., donde cada uno de los números que
+# lo componen debe aparecer repetido un número de veces igual a él mismo. 
+#
+# Output:
+#
+#   [1] 3 3 3 2 2 1 5 5 5 5 5 4 4 4 4 2 2 9 9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 
+#
+#******************************************************************************
+
+m1<-matrix(1:12)            # Crea una matriz de 12 elementos: 12 filas y 1 columna
+m2<-matrix(1:12, nrow=4)    # Crea una matriz de 12 elementos: 4 filas y 3 columnas
+m3<-matrix(1:12, ncol=4)    # Crea una matriz de 12 elementos: 3 filas y 4 columnas
+m4<-matrix(c(1,2,3,4,5,6,7,8,9,10,11,12),ncol=4,nrow=3)         # Ordena los numeros por columnas
+m5<-matrix(c(1,2,3,4,5,6,7,8,9,10,11,12),ncol=4,nrow=3,byrow=T) # Ordena los numeros por filas
+
+#dim(m3)          # Devuelve las dimensiones de una matriz
+#dimnames(m3)     # Devuelve el nombre de las dimensiones de una matriz
+#colnames(m3)     # Devuelve el nombre de las columnas de una matriz
+#rownames(m3)     # Devuelve el nombre de las filas de una matriz
+#mode(m3)         # Devuelve el tipo de datos de los elementos de una matriz
+#length(m3)       # Devuelve el número total de elementos de una matriz
+#is.matrix(m3)    # Devuelve T si el objeto es una matriz, F si no lo es
+#m3[3,3]          # Accede a elementos dentro de la matriz
+#apply()        # Aplica una función sobre las filas o columnas de una matriz
+#cbind()        # Añade una columna a una matriz dada o crea una matriz leyendo los elementos por columnas
+#rbind()        # Añade una fila a una matriz dada o crea una matriz leyendo los elementos por filas
+#t()            # Traspone la matriz dada 
+
+x1%*%x2         # Producto matricial

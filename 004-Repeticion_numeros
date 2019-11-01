@@ -1,0 +1,17 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 4
+#
+#        Ejercicio
+# 
+# Crear un vector con los números de vuestro D.N.I., donde cada uno de los números que
+# lo componen debe aparecer repetido un número de veces igual a él mismo. 
+#
+#******************************************************************************
+
+x<-"32154298"
+
+x3<-as.integer(unlist(strsplit(x,"")))  # Separo en caracteres y convierto a numeros
+
+rep(x3,x3);

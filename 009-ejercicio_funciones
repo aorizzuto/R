@@ -1,0 +1,28 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 9
+#
+#        Funciones
+#
+# Escribir una función que intercambie los valores de dos 
+# variables, denominadas x e y. 
+#
+#************************************************************
+
+intercambio<-function(x,y)
+{
+  z<-y
+  
+  return (c(z,x))
+}
+
+x<-2
+y<-3
+
+print(x)
+print(y)
+
+resultado<-intercambio(x,y)
+
+print(resultado)

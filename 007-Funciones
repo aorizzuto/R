@@ -1,0 +1,16 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 7
+#
+#        Funciones
+#
+#************************************************************
+
+#plot(sin, -pi, 2*pi)
+
+x<-seq(-3,3,0.2)
+#plot(datos,funcion,tipo de puntos,color, titulo)
+plot(x,dnorm(x),type="b",col=2,main="Densidad N(0,1)") 
+#Agrega una nueva funcion al grafico anterior
+lines(x,dnorm(x,1),col=3)

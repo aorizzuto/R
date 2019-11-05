@@ -1,0 +1,21 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 8
+#
+#        Ciclos
+# Encontrar cuál es el mayor número entero cuyo cuadrado no
+# excede de 1000, utilizando la orden while. 
+#
+#************************************************************
+
+i<-0
+j<-0
+
+while(j<1000)
+{
+  j<-i*i
+  i<-i+1
+}
+
+print(i-1)

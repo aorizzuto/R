@@ -1,0 +1,25 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 10
+#
+#        Funciones
+#
+# Escribir una función que genere los n primeros términos de
+# la serie de Fibonacci 
+#
+#************************************************************
+
+i=0
+j=1
+cont=0
+print(i+j)
+
+while(cont<20)
+{
+  print(i+j)
+  aux<-j
+  j=j+i
+  i<-aux
+  cont=cont+1
+}

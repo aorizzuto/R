@@ -1,0 +1,37 @@
+#******************************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 6
+#
+#        Matrices - Ejercicio
+# 
+" 
+Crear una matriz con cuatro alumnos con:
+    - edad, año de nacimiento y número de teléfono. 
+Deberá aparecer el nombre de la columna (“edad”, “año de nacimiento”, “teléfono”) y el nombre de la fila (Nombre alumno) 
+
+Los data.frames son listas que generalizan a las matrices, las columnas pueden ser de diferente tipo entre sí. 
+Todos los elementos de una misma columna deben ser del mismo tipo. 
+Todos los elementos de un data.frame deben tener la misma longitud. 
+De este modo, pueden usarse funciones como dimnames, dim, nrow sobre un data.frame como si se tratara de una matriz.
+Para crear un objeto de este tipo, usaremos la función 
+data.frame( )
+La manera más sencilla de construirlo es utilizar la función read.table( ) para leer la hoja de
+datos desde un archivo, por ejemplo de texto o excel.
+
+"
+#archivo:
+
+#"edad" "nacimiento" "telefono"
+#"ale" 33 "3/4/86" 1558927477
+#"seba" 34 "18/1/85" 1559272231
+#"lucia" 30 "3/3/90" 1590827784
+
+#
+#******************************************************************************
+
+x = read.table("ale.txt")
+
+colnames(x)
+rownames(x)
+length(x)

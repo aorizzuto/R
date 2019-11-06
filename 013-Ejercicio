@@ -1,0 +1,43 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 13
+#
+#        Ejercicio
+#
+"Define una función que calcule la suma de la serie 1+r+r2+r3+⋯:
+Argumentos:
+-r: la razón, por defecto 0.5.
+-first: el primer exponente, que por defecto sea 0
+-last: el último expoenente, que por defecto sea Inf (que corresponde a la serie completa).
+
+Cuerpo:
+-Debe verificar que r es un valor numérico
+-Debe verificar que first es un valor entero no negativo
+-Debe verificar que last es un valor entero mayor o igual que first, o bien es Inf
+
+Debe retornar el valor de la suma rfirst+rfirst+1+⋯+rlast
+Si last es Inf debes acudir a una fórmula que no involucre usar infinitos.
+"
+#
+#************************************************************
+
+calcular <- function(f=0, l=Inf, r=0.5)
+{
+  if(is.numeric(f) && is.numeric(l) && is.numeric(r))
+  {
+    if(f<l && f>=0)
+    {
+      if(l==Inf)
+      {
+        l<-100
+      }
+      return (sum(r^(f:l)))
+    }
+    return(-1)
+  }
+  return(-2)
+}
+
+x<-calcular()
+print(x)

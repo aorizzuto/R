@@ -1,0 +1,30 @@
+#************************************************************
+# Autor: Alejandro Rizzuto 
+# Lenguaje: R
+# Ejemplo 14
+#
+#        Ejercicio
+#
+"TEOREMA DEL LÍMITE CENTRAL: 
+Simula 20 muestras de tamaño 300 en el intervalo [0,1]. 
+Define una media que sea la media aritmética de las 20 muestras
+Representa una matriz de 3x3 histogramas, donde los 8 primeros histogramas correspondan a las 8 primeras muestras, y el último histograma sea de la variable media.
+"
+#
+#************************************************************
+x <- list()
+cant<-100
+
+
+for(i in 1:20)
+{
+  x[[i]] <- runif(n=cant, min=0, max=1) # 20 valores aleatorios 
+  if(i == 1){ media<-sum(x[[i]])/cant}
+  else{ media <- c(media,sum(x[[i]])/cant)}
+}
+
+for(i in 1:8)
+{
+  hist(x[[i]])
+}
+hist(media)

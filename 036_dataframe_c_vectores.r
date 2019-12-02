@@ -1,4 +1,4 @@
-"Write a R program to create an array using four given columns, three given rows, and two given tables and display the content of the array"
+"Write a R program to create a data frame from four given vectors"
 
 a <- c(1,1,1,1,1)
 b <- rep(2,5)

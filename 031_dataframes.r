@@ -12,6 +12,11 @@ print("Detalle de los empleados:")
 print(Employees)
 str(Employees)
 print(summary(Employees))
+print(Employees[1:2])
+
+# Extract Specific columns.
+result <- data.frame(Employees$Puesto)
+print(result)
 
 "
 [1] "Detalle de los empleados:"
@@ -35,4 +40,17 @@ print(summary(Employees))
  Mean   :3   Laura A    :1          Mean   :24.2   Ingeniero:2
  3rd Qu.:4   Sebastian R:1          3rd Qu.:26.0
  Max.   :5                          Max.   :28.0
+
+  id      Nombre
+1  1 Alejandro R
+2  2  Federico G
+3  3 Sebastian R
+4  4     Laura A
+5  5     Diana P
+  Employees.Puesto
+1        Ingeniero
+2          Gerente
+3              CEO
+4        Asistente
+5        Ingeniero
 "

@@ -21,3 +21,5 @@ print(mtx)
 [2,]   10    5    8
 [3,]   -8   -4   -9
 "
+
+" Otra forma puede ser con cbind/rbind "

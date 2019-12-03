@@ -29,7 +29,7 @@ print(df)
 [1] 4 4 4 4 4
 [1] 5 5 5 5
 
-Data Frame antes de agregar columna:
+Data Frame antes de agregar fila:
   a b c d
 1 1 2 3 4
 2 1 2 3 4

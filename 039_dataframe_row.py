@@ -1,4 +1,4 @@
-"Write a R program to add a new column in a given data frame"
+"Write a R program to add a new row in a given data frame"
 
 a <- c(1,1,1,1,1)
 b <- rep(2,5)

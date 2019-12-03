@@ -5,20 +5,17 @@ b <- rep(2,5)
 c <- rep(3,5)
 d <- rep(4,5)
 
-e <- rep(5,4)
-
 print(a)
 print(b)
 print(c)
 print(d)
-print(e)
 
 df = data.frame(a,b,c,d)
 
 cat("\nData Frame antes de dropear fila:\n")
 print(df)
 
-df = subset(df, select = -c(d))
+df = subset(df, select = -d)
 
 cat("\nData Frame nueva:\n")
 print(df)
